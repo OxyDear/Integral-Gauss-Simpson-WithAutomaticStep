@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include "../hfiles/config.h"
-#include "../hfiles/func.h"
+#include "../hfiles/main.h"
 
 double gauss(double a, double b) {
     int amountNodes = 7;

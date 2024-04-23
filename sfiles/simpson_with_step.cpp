@@ -3,8 +3,7 @@
 //
 
 #include <iostream>
-#include "../hfiles/simpson_with_step.h"
-#include "../hfiles/func.h"
+#include "../hfiles/main.h"
 
 double simpson_for_step(double a, double b, double h) {
     int n = (b - a) / h;

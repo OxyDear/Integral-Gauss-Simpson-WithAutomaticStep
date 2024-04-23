@@ -1,9 +1,6 @@
 #include <iostream>
 #include "hfiles/config.h"
-#include "hfiles/simpson.h"
-#include "hfiles/simpson_with_step.h"
-#include "hfiles/gauss.h"
-#include "hfiles/gauss_with_step.h"
+#include "hfiles/main.h"
 
 using namespace std;
 

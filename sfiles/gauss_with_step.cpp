@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include "../hfiles/config.h"
-#include "../hfiles/func.h"
+#include "../hfiles/main.h"
 
 double gauss_with_step(double a, double b) {
     double h = (b - a);

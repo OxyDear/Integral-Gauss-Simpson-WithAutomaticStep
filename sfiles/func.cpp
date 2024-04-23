@@ -3,7 +3,7 @@
 //
 
 #include <iostream>
-#include "../hfiles/func.h"
+#include "../hfiles/main.h"
 
 double func(double x) {
     return 4 * x - 7 * std::sin(x);

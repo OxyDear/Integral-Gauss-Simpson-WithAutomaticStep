@@ -2,8 +2,7 @@
 // Created by Ivan Potyomin on 23.04.24.
 //
 
-#include "../hfiles/simpson.h"
-#include "../hfiles/func.h"
+#include "../hfiles/main.h"
 
 double simpson(double a, double b, int n) {
     double h = (b-a)/n, sum = 0;
