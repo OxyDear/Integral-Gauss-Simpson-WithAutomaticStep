@@ -24,7 +24,7 @@ int main() {
                 cout << "\033[1;32m" << "\nintegral simpson with step: " << simpson_with_step(a, b) << "\033[1;37m" << endl;
                 break;
             case 3:
-                cout << "\033[1;33m"  << "\nintegral gauss: " << gauss(a, b) << "\033[1;37m" << endl;
+                cout << "\033[1;33m" << gauss(a, b) << "\033[1;37m" << endl;
                 break;
             case 4:
                 cout << "\033[1;34m" << "\nintegral gauss with step: " << gauss_with_step(a, b) << "\033[1;37m" << endl;

@@ -8,6 +8,8 @@
 
 double gauss(double a, double b) {
     int amountNodes = 7;
+    std::cout << "\namount of nodes: ";
+    std::cin >> amountNodes;
     double sum = 0;
 
     switch (amountNodes) {
@@ -46,7 +48,7 @@ double gauss(double a, double b) {
             break;
     }
 
-    std::cout << sum;
+    std::cout  << "\nintegral gauss: " << sum;
 
     return 0;
 }
