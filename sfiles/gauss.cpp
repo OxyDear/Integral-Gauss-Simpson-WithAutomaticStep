@@ -12,6 +12,11 @@ double gauss(double a, double b) {
     std::cin >> amountNodes;
     double sum = 0;
 
+    if (amountNodes > 7 or amountNodes < 1) {
+        std::cout << "\nMax amount of nodes is 7";
+        return 0;
+    }
+
     switch (amountNodes) {
         case 1:
             sum += (b-a)*(weights1[0] * func(a + (b - a) * nodes1[0]));
