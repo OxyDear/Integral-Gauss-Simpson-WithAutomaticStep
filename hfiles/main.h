@@ -9,7 +9,7 @@
 
 double func(double x);
 
-double simpson(double a, double b, int n);
+double simpson(double a, double b);
 double simpson_for_step(double a, double b, double h);
 double simpson_with_step(double a, double b);
 

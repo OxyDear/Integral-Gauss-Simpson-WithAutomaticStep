@@ -4,7 +4,8 @@
 
 #include "../hfiles/main.h"
 
-double simpson(double a, double b, int n) {
+double simpson(double a, double b) {
+    int n = 10000;
     double h = (b-a)/n, sum = 0;
 
     for (double x = a; x <= b; x+=h) {

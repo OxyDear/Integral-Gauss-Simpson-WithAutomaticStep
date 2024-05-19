@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
 
-    int chs = 1, a = -2, b = 3, n = 10000;
+    int chs = 1, a = -2, b = 3;
 
     while (chs == 1 || chs == 2 || chs == 3 || chs == 4) {
         cout << "\n1 - simpson\n"
@@ -17,7 +17,7 @@ int main() {
 
         switch (chs) {
             case 1:
-                cout << "\033[1;31m" << "\nintegral simpson: " << simpson(a, b, n) << "\033[1;37m" << endl;
+                cout << "\033[1;31m" << "\nintegral simpson: " << simpson(a, b) << "\033[1;37m" << endl;
                 break;
             case 2:
                 cout << "\033[1;32m" << "\nintegral simpson with step: " << simpson_with_step(a, b) << "\033[1;37m" << endl;
