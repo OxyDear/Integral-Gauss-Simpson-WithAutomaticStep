@@ -1,5 +1,4 @@
 #include <iostream>
-#include "hfiles/config.h"
 #include "hfiles/main.h"
 
 using namespace std;

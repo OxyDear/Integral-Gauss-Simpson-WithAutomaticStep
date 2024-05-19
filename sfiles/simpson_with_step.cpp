@@ -35,11 +35,11 @@ double simpson_with_step(double a, double b) {
 
         int n = 1000;
         double step = (b-a)/n;
-        double sumTrap = 0.0;
+        double sumTrap = (func(a) + func(b)) / 2.0;
         double x;
 
         // Метод трапеций
-        sumTrap += (func(a) + func(b)) / 2.0;
+        // sumTrap += (func(a) + func(b)) / 2.0;
 
         for (int k = 1; k < n; ++k) {
             x = a + k * step;  // Точка на интервале

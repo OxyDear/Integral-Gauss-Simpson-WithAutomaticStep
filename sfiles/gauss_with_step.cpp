@@ -10,13 +10,13 @@ double gauss_with_step(double a, double b) {
     double h = (b - a);
     double integral = 0.0;
     double previous_integral = 0.0;
-    int max_iterations = 8;
+    int max_iterations = 7;
 
-    for (int i = 0; i < max_iterations; ++i) {
+    for (int i = 1; i <= max_iterations; ++i) {
 
         // Метод Гаусса
         double sum = 0.0;
-        int amountNodes = i + 1;
+        int amountNodes = i;
 
         switch (amountNodes) {
             case 1:

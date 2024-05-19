@@ -7,7 +7,7 @@
 #include "../hfiles/main.h"
 
 double gauss(double a, double b) {
-    int amountNodes = 7;
+    int amountNodes;
     std::cout << "\namount of nodes: ";
     std::cin >> amountNodes;
     double sum = 0;
