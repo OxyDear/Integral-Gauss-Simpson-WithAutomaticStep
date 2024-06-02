@@ -26,7 +26,9 @@ double simpson_with_step(double a, double b) {
     double h = (b - a);  // Начальный шаг интегрирования
     double integral = 0.0;
     double previous_integral = 0.0;
-    int max_iterations = 1000;  // Максимальное число итераций
+    int max_iterations = 10000;  // Максимальное число итераций
+
+    double razn = adaptive(a, b);
 
     for (int i = 0; i < max_iterations; ++i) {
 
@@ -39,7 +41,7 @@ double simpson_with_step(double a, double b) {
         double x;
 
         // Метод трапеций
-        // sumTrap += (func(a) + func(b)) / 2.0;
+         sumTrap += (func(a) + func(b)) / 2.0;
 
         for (int k = 1; k < n; ++k) {
             x = a + k * step;  // Точка на интервале
@@ -62,7 +64,7 @@ double simpson_with_step(double a, double b) {
         double error = std::abs(integral - previous_integral);
 
         // Проверка погрешности
-        if (error < std::abs(sumSred - sumTrap)) {
+        if (error < std::abs(razn)) {
             return integral;
         }
 

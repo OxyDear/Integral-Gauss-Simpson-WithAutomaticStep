@@ -1,7 +1,3 @@
-//
-// Created by Ivan Potyomin on 23.04.24.
-//
-
 #include <iostream>
 #include "../hfiles/config.h"
 #include "../hfiles/main.h"

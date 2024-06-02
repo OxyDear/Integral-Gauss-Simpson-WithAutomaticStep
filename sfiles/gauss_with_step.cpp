@@ -12,6 +12,8 @@ double gauss_with_step(double a, double b) {
     double previous_integral = 0.0;
     int max_iterations = 7;
 
+    double razn = adaptive(a, b);
+
     for (int i = 1; i <= max_iterations; ++i) {
 
         // Метод Гаусса
@@ -56,37 +58,11 @@ double gauss_with_step(double a, double b) {
 
         integral = sum;
 
-        // Адаптивный выбор нового шага интегрирования
-        int n = 1000;
-        double step = (b-a)/n;
-        double sumTrap = 0.0;
-        double x;
-
-        // Метод трапеций
-        sumTrap += (func(a) + func(b)) / 2.0;
-
-        for (int k = 1; k < n; ++k) {
-            x = a + k * step;  // Точка на интервале
-            sumTrap += func(x);
-        }
-
-        sumTrap = step * sumTrap;
-
-        // Метод средних
-        double sumSred = 0.0;
-
-        for (int k = 0; k < n; ++k) {
-            x = a + (k + 0.5) * step;  // Точка внутри прямоугольника
-            sumSred += func(x);
-        }
-
-        sumSred = step * sumSred;
-
         // Оценка погрешности с использованием средних
         double error = std::abs(integral - previous_integral);
 
         // Проверка погрешности
-        if (error < std::abs(sumSred - sumTrap)) {
+        if (error < std::abs(razn)) {
             return integral;
         }
 

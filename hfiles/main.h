@@ -15,3 +15,4 @@ double simpson_with_step(double a, double b);
 
 double gauss(double a, double b);
 double gauss_with_step(double a, double b);
+double adaptive(double a, double b);
